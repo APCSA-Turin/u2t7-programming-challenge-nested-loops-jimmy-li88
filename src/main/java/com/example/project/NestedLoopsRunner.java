@@ -2,19 +2,23 @@ package com.example.project;
 
 public class NestedLoopsRunner {
     public static void main(String[] args) {
-        String orig = " ";
         String emptyBox = "";
-        for (int i = 0; i < 9; i++){
+        for (int i = 0; i < 5; i++){
             emptyBox += "*";
         }
-        for (int j = 0; j < 5 - 3; j++ ){
-            for (int k = 0; k < 5 - 3; k++){
-                emptyBox += ("*" + "\n" + orig.repeat(7) + "*");
+        emptyBox += "\n";
+        for (int j = 0; j < 5 - 2; j++ ){
+            emptyBox += "*";
+            for (int k = 0; k < 5 - 2; k++){
+                emptyBox += (" ");
             }
+            emptyBox += ("*\n");
         }
-        for (int l = 0; l < 9; l++){
+        if (5 > 1){
+        for (int i = 0; i < 5; i++){
             emptyBox += "*";
         }
-        System.out.print(emptyBox);
+        }
+        System.out.print(emptyBox) ;
     }
 }
